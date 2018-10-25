@@ -21,7 +21,7 @@ conda update --yes conda
 popd
 
 conda create -n testenv --yes python=$TRAVIS_PYTHON_VERSION pip pytest hdf5 \
-      numpy=$NUMPY_VERSION scipy=$SCIPY_VERSION numba scikit-learn statsmodels
+      numpy=$NUMPY_VERSION scipy=$SCIPY_VERSION numba=0.40.0 scikit-learn statsmodels
 
 source activate testenv
 
